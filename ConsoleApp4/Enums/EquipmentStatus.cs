@@ -1,6 +1,9 @@
 ﻿namespace ConsoleApp4.Enums;
 
-public class EquipmentStatus
+public enum EquipmentStatus
 {
-    
+    Avalible,
+    Rented,
+    Damaged,
+    InService
 }
