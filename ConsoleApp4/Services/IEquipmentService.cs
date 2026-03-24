@@ -1,14 +1,19 @@
-﻿using ConsoleApp4.Equipment;
+﻿using ConsoleApp4.Enums;
+using ConsoleApp4.Equipment;
 
 
 namespace ConsoleApp4.Services;
-using Equipment = ConsoleApp4.Equipment.Equipment;
+using Equipment = Equipment.Equipment;
 public interface IEquipmentService
 {
-    void addEquipment();
+    void addEquipment(Equipment equipment);
     
-    List<Equipment> GetAllEquipment();
+    List<Equipment> GetAllEquipment();    
+    List<Equipment> GetAvailableEquipment();    
     
-    List<Equipment> GetAvailableEquipment();
+    void SetEquipmentStatus(string equipmentId, EquipmentStatus newStatus);
+    
     
 }
+    
+    
